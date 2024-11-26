@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ban nhac cu</title>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Alata|Calistoga|Lobster|Pacifico|Solway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Comfortaa|Exo+2|Hind+Siliguri|Merriweather+Sans|PT+Sans|Poppins|Roboto|Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="guitar.css">
+	<link rel="stylesheet" type="text/css" 
+	href="styles.css">
+	<link rel="stylesheet" type="text/css" href="giohang.css">
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<div class="top-menue">
+				<div class="container">
+				<div class="logo" >
+					<a href="#">Intrument Shop</a>
+				</div>
+				<div class="menue" >
+					<ul>
+						<li><a href="">Sản phẩm</a></li>
+						<li><a href="">Thương hiệu</a></li>
+						<li><a href="">Khóa học </a></li>
+						<li><a href="">Giới thiệu</a></li>
+						<li>
+							<div class="search-tool">
+								<i class="material-icons">search</i>
+							</div>
+						</li>
+						   
+					</ul>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="body">
+			<DIV class="thanhtoan-page">
+				<h1 style="text-align: center;">Tiến hành đặt hàng</h1>
+				<div class="container">
+					<div class="thanhtoan-item" id="taikhoan">
+						<h2 style="text-align:center">Tài khoản</h2>
+						<div class="card">
+						<img src="logo/avatar.jpg" alt="John" style="width:100%">
+						<h1>Nguyễn Phú Mẫn</h1>
+						<p class="title">mingming0865</p>
+						<p style="color: red">Tài khoản VIP</p>
+						<div style="margin: 24px 0;">
+						    <a href="#"><i class="fa fa-twitter" style="padding: 10px;" ></i></a>  
+						    <a href="#"><i class="fa fa-facebook" style="padding: 10px;"></i></a> 
+						</div>
+						<p><button>Thông tin chi tiết</button></p>
+						</div>
+					</div>
+					<div class="thanhtoan-item " id="thongtinthanhtoan">
+						<form action="/action_page.php">
+					        <div class="row">
+					          <div class="col-50">
+					            <h3 style="margin-bottom: 20px;padding: 2px 0px;">Địa chỉ nhận hàng</h3>
+					            <label for="fname"><i class="fa fa-user"></i> Họ và tên</label>
+					            <input type="text" id="fname" name="name" placeholder="Nguyễn Phú Mẫn">
+					            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+					            <input type="text" id="email" name="email" placeholder="mingming0865@gmail.com">
+					            <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+					            <input type="text" id="adr" name="address" placeholder="79 Dương Quảng Hàm">
+					            <label for="city"><i class="fa fa-institution"></i> Địa chỉ</label>
+					            <input type="text" id="city" name="city" placeholder="Hà Nội">
+
+					            <div class="row">
+					              <div class="col-50">
+					                <label for="state">Số điện thoại</label>
+					                <input type="text" id="sdt" name="sdt" placeholder="NY">
+					              </div>
+					              <div class="col-50">
+					                <label for="zip">Zip</label>
+					                <input type="text" id="zip" name="zip" placeholder="10001">
+					              </div>
+					            </div>
+					          </div>
+
+					          <div class="col-50">
+					            <h3>Payment</h3>
+					            <label for="fname">Accepted Cards</label>
+					            <div class="icon-container">
+					              <i class="fa fa-cc-visa" style="color:navy;"></i>
+					              <i class="fa fa-cc-amex" style="color:blue;"></i>
+					              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+					              <i class="fa fa-cc-discover" style="color:orange;"></i>
+					            </div>
+					            <label for="cname">Name on Card</label>
+					            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+					            <label for="ccnum">Credit card number</label>
+					            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+					            <label for="expmonth">Exp Month</label>
+					            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+					            <div class="row">
+					              <div class="col-50">
+					                <label for="expyear">Exp Year</label>
+					                <input type="text" id="expyear" name="expyear" placeholder="2024">
+					              </div>
+					              <div class="col-50">
+					                <label for="cvv">CVV</label>
+					                <input type="text" id="cvv" name="cvv" placeholder="352">
+					              </div>
+					            </div>
+					          </div>
+					          
+					        </div>
+					        <label>
+					          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+					        </label>
+					        
+					      </form>
+   						</div>
+   						<div class="thanhtoan-item" id="bill">
+						   	<h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+						      <p><a href="#">Guitar fender</a> <span class="price">15,000,000 đ</span></p>
+						      <p><a href="#">Guitar accaustic 1</a> <span class="price">5,00,000 đ</span></p>
+						      <p><a href="#">String</a> <span class="price">5,00,000 đ</span></p>
+						      <p><a href="#">Violin</a> <span class="price">5,00,000 đ</span></p>
+						      <hr>
+						      <p>Total <span class="price" style="color:black"><b>30,000,00 đ</b></span></p>
+							<input type="submit" value="Thanh toán" class="btn">
+						</div>
+ 						</div>
+					</div>
+					
+				</div>
+			</DIV>
+		</div>
+		<hr>
+		<div class="footer">
+			<div class="container">
+				<div class="box">
+					<div class="box" >
+					<p>Cập nhật thông tin khuyến mãi.</p>
+					<form>
+						<input type="email" name="newsletter" value="" placeholder="Email của bạn" class="input_newsletter" id="input_newsletter">
+						<button type="submit" class="submit-email">Đăng ký</button>
+					</form>
+					</div>
+					<div class="box" style="margin-top: 10px;">
+						<p>KẾT NỐI VỚI CHÚNG TÔI</p>
+						<div class="social-list">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-youtube"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+					</div>
+				</div>
+				<div class="box info">
+					<p>Hỗ trợ khách hàng </p>
+					<p>Gọi mua hàng: <span class="hightlight">0385274229 (Nguyễn Mẫn)</span></p>
+					<p>Khiếu nại , bảo hành : <span class="hightlight">0385274229</span></p><p>Thời gian phục vụ : 8h-22h</p>
+					<p>Email: mingming0865@gmail.com</p>
+				</div>
+				<div class="box">
+					<p>VỀ CHÚNG TÔI</p>
+					<ul>
+						<li><a href="">Giới thiệu về công ty</a></li>
+						<li><a href="">Điều khoản sử dụng</a></li>
+						<li><a href="">Hệ thống cửa hàng</a></li>
+						<li><a href="">Liên hệ - Góp ý</a></li>
+					</ul>
+				</div>
+				<div class="box">
+					<p>HỆ THỐNG WEBSITE</p>
+					<ul>
+						<li><a href="">Hướng dẫn mua hàng</a></li>
+						<li><a href="">Chinh sách bảo hành</a></li>
+						<li><a href="">Chính sách đổi trả</a></li>
+						<li><a href="">Liên hệ - Góp ý</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				
+			</div>
+		</div>
+
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,61 @@
+.giohang-page {
+	padding: 67px;
+}
+
+.main-giohang{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns:  85% 15%;
+}
+
+.giohang-product-box{
+	display: grid;
+	grid-template-columns: 280px 150px 200px 100px 25%;
+	grid-gap: 10px;
+	grid-row-gap: 20px;
+	text-align: center;
+}
+.giohang-product-box h2 {
+	padding: 10px 0px;
+}
+
+.total-cost {
+	height: 300px;
+
+}
+.total-cost p {
+	font-weight: 500px;
+	padding:10px;
+}
+.giohang-page .price-new {
+	font-size: 20px;
+}
+
+.main-giohang .left-content{
+	
+}
+
+.quaitity input {
+	width: 30px;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+.product-line-price{
+	text-align: center;
+	color: red;
+    margin-right: 3px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.head-giohang {
+  display: grid;
+	grid-template-columns: 280px 150px 200px 100px 25%;
+	grid-gap: 10px;
+	grid-row-gap: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+}

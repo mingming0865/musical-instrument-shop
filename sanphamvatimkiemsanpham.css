@@ -1,0 +1,38 @@
+.product-page{
+	padding-top: 67px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/*barrrrrrrr*/
+.product-page .product-page-content{
+	padding: 2px;
+	margin: 10px 0px;
+}
+
+.product-page .product-show {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4,auto);
+	grid-gap: 20px;
+	padding: 20px;
+	padding-bottom: 40px;
+}
+
+.product-page .product-show  .pagination {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+
+
+#login-box-homepage {
+  position: fixed;
+}

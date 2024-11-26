@@ -1,0 +1,71 @@
+$(function(){
+	// $.get("https://inesn.me/json/guitarplus.json");
+	var f = location.href.split("?")[0],
+		U = "https://inesn.me/php/cfg.isp",
+		x = $(".belowscr");
+	if (!x.length)
+		return;
+	$.post(U,{ a:1, id:f },function(d){
+		// console.log(d);
+		var ad = $("#admintoolbar").length,
+			id = d,
+			V;
+		x.after(
+			$("<div>",{ class:"col-sm-12 col-xs-12" }).css({
+				marginTop:10,
+				paddingBottom:900/16+"%",
+			}).append(
+				V = $("<iframe>",{ class:"", src:id ? "https://www.youtube.com/embed/"+id : undefined }).css({
+					position:"absolute",
+					top:0,
+					left:0,
+					width:"100%",
+					height:"100%",
+					background:"#eee",
+					zIndex:0,
+					display:id ? "block" : "none"
+				}),
+				ad ? $("<div>",{ text:"Thay Video" }).css({
+					position:"absolute",
+					borderRadius:5,
+					background:"#205FA0",
+					color:"#fff",
+					cursor:"pointer",
+					padding:5,
+					top:0,
+					right:0,
+					zIndex:1
+				}).click(function(){
+					var v = prompt("Vui lòng điền URL Video"),
+						m = ((v||"").match(/(?:youtube\.com|youtu\.be)\/(?:watch\?v=|v\/)?([A-Z0-9_-]+)/i)||[])[1];
+					if (m) {
+						$.post(U,{ a:1, id:f, data:m },function(s){
+							if (s==1) {
+								V.attr("src","https://www.youtube.com/embed/"+(id=m)).on("load",function(){
+									V.fadeIn();
+								});
+							} else {
+								alert("Lỗi!?\n"+s);
+							}
+						});
+					} else {
+						if (v) { // Nhập URL không đúng
+							alert("URL không đúng!");
+						} else if (id) { // Xóa video cũ
+							var o = confirm("Bạn muốn xóa Video này?");
+							if (o==true) {
+								$.post(U,{ a:1, id:f, data:"" },function(s){
+									if (s==1) {
+										V.fadeOut().removeAttr("src");
+									} else {
+										alert("Lỗi!?\n"+s);
+									}
+								});
+							}
+						}
+					}
+				}) : ""
+			)
+		);
+	});
+});
